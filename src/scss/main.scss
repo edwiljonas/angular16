@@ -1,0 +1,15 @@
+/*
+* Main Controller Styles
+*/
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+@import "layouts/variables";
+@import "layouts/misc";
+@import "layouts/navigation";
+@import "layouts/layouts";
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+
+}

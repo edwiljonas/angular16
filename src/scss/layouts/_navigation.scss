@@ -1,0 +1,22 @@
+/*
+* Navigation Styles
+*/
+.navigation{
+  width: 100%;
+  display: table;
+  box-sizing: border-box;
+  ul{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    li{
+      float: left;
+      width: 25%;
+      height: inherit;
+      background: #FFF;
+      line-height: 60px;
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+}

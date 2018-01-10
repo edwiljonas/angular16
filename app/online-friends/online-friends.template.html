@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="online">
+                <li ng-repeat="friend in friends">
+                    <div class="image" style="background-image: url(assets/images/{{friend.image}})"></div>
+                    <div class="online-content">
+                        {{friend.name}}
+                        <span>Currently playing {{friend.champ}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

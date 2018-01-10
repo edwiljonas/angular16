@@ -1,0 +1,26 @@
+{
+  "name": "league16",
+  "version": "1.0.0",
+  "description": "Angular Application",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "sass": "^1.0.0-beta.3",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gw": "gulp watch"
+  },
+  "keywords": [
+    "league16"
+  ],
+  "author": "Edwil",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  }
+}
