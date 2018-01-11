@@ -7,41 +7,49 @@
     <!-- CSS -->
     <link rel="stylesheet" id="main" href="assets/css/main.css" type="text/css" media="all">
     <link rel="stylesheet" id="font-awesome" href="assets/css/font-awesome.css" type="text/css" media="all">
-    <!-- SCRIPTS -->
-    <script src="assets/js/angular.js"></script>
-    <script src="assets/js/angular-route.js"></script>
-    <!-- CONTROLLERS -->
-    <script src="app/app.js"></script>
-    <script src="app/app.module.js"></script>
-    <script src="app/online-friends/online-friends.module.js"></script>
-    <script src="app/online-friends/online-friends.component.js"></script>
-    <script src="app/online-users/online-users.module.js"></script>
-    <script src="app/online-users/online-users.component.js"></script>
 </head>
-<body>
-<online-users></online-users>
+<body ng-controller="NavigationController">
+
 <!-- NAVIGATION -->
 <div class="container">
     <div class="row">
         <div class="navigation">
             <ul>
-                <li class="fa fa-home"></li>
-                <li class="fa fa-users"></li>
-                <li class="fa fa-cog"></li>
-                <li class="fa fa-dashboard"></li>
+                <li ng-repeat='item in menuItems' class="fa fa-{{item.icon}}" ng-class="{active : activeMenu === item.location}"><a href="{{item.path}}" ng-click="setActive(item.location)"></a></li>
             </ul>
         </div>
     </div>
 </div>
-<!-- INTRO HEADING -->
-<div class="container intro-heading">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Friends Online</h1>
-        </div>
-    </div>
-</div>
-<!-- CONTENT HOLDER -->
-<online-friends></online-friends>
+
+<!-- VIEW -->
+<ng-view></ng-view>
+
+<!-- FOOTER -->
+<footer-holder></footer-holder>
+
+<!-- SCRIPTS -->
+<script src="assets/js/angular.js"></script>
+<script src="assets/js/angular-route.js"></script>
+<script src="assets/js/angular-resource.js"></script>
+
+<!-- CONTROLLERS -->
+<script src="app/app.js"></script>
+<script src="app/core/friends/friends.module.js"></script>
+<script src="app/core/friends/friends.service.js"></script>
+<script src="app/core/users/users.module.js"></script>
+<script src="app/core/users/users.service.js"></script>
+<script src="app/online-friends/online-friends.module.js"></script>
+<script src="app/online-friends/online-friends.component.js"></script>
+<script src="app/online-users/online-users.module.js"></script>
+<script src="app/online-users/online-users.component.js"></script>
+<script src="app/online-profile/online-profile.module.js"></script>
+<script src="app/online-profile/online-profile.component.js"></script>
+<script src="app/online-detail/online-detail.module.js"></script>
+<script src="app/online-detail/online-detail.component.js"></script>
+<script src="app/online-info/online-info.module.js"></script>
+<script src="app/online-info/online-info.component.js"></script>
+<script src="app/footer-holder/footer-holder.module.js"></script>
+<script src="app/footer-holder/footer-holder.component.js"></script>
+
 </body>
 </html>

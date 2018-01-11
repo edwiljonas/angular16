@@ -1,0 +1,57 @@
+<!-- INTRO -->
+<div class="container intro-heading">
+   <div class="row">
+      <div class="col-md-12">
+         <h1>{{title}}</h1>
+      </div>
+   </div>
+</div>
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+         <ul class="online user-detail">
+            <li>
+               <a>
+                  <div class="image" style="background-image: url(assets/images/{{friend.image}})"></div>
+                  <div class="online-content">
+                     {{friend.name}}
+                     <span>Currently playing {{friend.champ}}</span>
+                  </div>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+<div class="container">
+   <div class="row content-area">
+      <div class="col-md-12">
+         <h2>Most played champions</h2>
+         <div class="most-played">
+            <ul>
+               <li ng-repeat="friend in friend.mostPlayed">
+                  <div class="image" style="background-image: url(assets/images/{{friend.image}})"></div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="container">
+   <div class="row content-area">
+      <div class="col-md-12">
+         <h2>Most played champions</h2>
+         <ul class="online user-history">
+            <li ng-repeat="friend in friend.matchHistory">
+               <a>
+                  <div class="image" style="background-image: url(assets/images/{{friend.image}})"></div>
+                  <div class="online-content">
+                     <div>{{friend.outcome}}</div>
+                     <span>Currently playing {{friend.champ}}</span>
+                  </div>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>

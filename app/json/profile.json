@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Edwil Jonas",
+    "image": "ken-small.jpg",
+    "champ": "Kennen",
+    "email": "travellingejj@gmail.com",
+    "handle": "Arc",
+    "social": [
+      {
+        "facebook": "#facebook",
+        "twitter": "",
+        "google": "#google"
+      }
+    ],
+    "status": 1
+  }
+]

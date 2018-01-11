@@ -1,3 +1,24 @@
+<div class="container intro-heading">
+   <div class="row">
+      <div class="col-md-12">
+         <h1>{{title}}</h1>
+      </div>
+   </div>
+</div>
 <div class="container">
-   USERS
+   <div class="row">
+      <div class="col-md-12">
+         <ul class="online">
+            <li ng-repeat="user in users">
+               <a>
+                  <div class="image" style="background-image: url(assets/images/{{user.image}})"></div>
+                  <div class="online-content">
+                     {{user.name}}
+                     <span>Currently playing {{user.champ}}</span>
+                  </div>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
 </div>

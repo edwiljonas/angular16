@@ -1,0 +1,17 @@
+/*
+* Info Styles
+*/
+.completed{
+  li{
+    &:after{
+      content: "\f00c";
+      font-family: FontAwesome, sans-serif;
+      color: green;
+    }
+    &.not:after{
+      content: "\f00d";
+      font-family: FontAwesome, sans-serif;
+      color: indianred;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<div class="container intro-heading">
+   <div class="row">
+      <div class="col-md-12">
+         <h1>{{title}}</h1>
+      </div>
+   </div>
+</div>
+<div class="container">
+   <div class="row content-area">
+      <div class="col-md-12">
+         <form>
+            <h2>My Settings</h2>
+            <div class="form-holder">
+               <div class="form-group">
+                  <label for="name">Name</label>
+                  <input readonly class="form-control" type="text" id="name" ng-model="user.name">
+                  <small id="nameHelp" class="form-text text-muted">This is your name, this can not be changed.</small>
+               </div>
+               <div class="form-group">
+                  <label for="name">Handle</label>
+                  <input class="form-control" type="text" id="handle" ng-model="user.handle">
+               </div>
+               <div class="form-group">
+                  <label for="name">Email</label>
+                  <input class="form-control" type="text" id="email" ng-model="user.email">
+               </div>
+               <div class="form-group">
+                  <label for="name">Favourite Champion</label>
+                  <input class="form-control" type="text" id="champ" ng-model="user.champ">
+               </div>
+            </div>
+            <h2>Social Settings</h2>
+            <div class="form-holder">
+               <div class="form-group" ng-repeat="(key, value) in user.social[0]">
+                  <label for="{{key}}">{{key}}</label>
+                  <input class="form-control" type="text" id="{{key}}" ng-model="value">
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>

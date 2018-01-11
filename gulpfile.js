@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 var _js = [
         'src/js/main.js',
         'src/angular/angular.js',
-        'src/js/owl.js',
+        'src/js/owl.js'
     ],
     _sass = [
         'src/scss/main.scss',

@@ -1,5 +1,5 @@
 /*
-* Main Controller Styles
+* Main Styles
 */
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
@@ -5695,7 +5695,12 @@ a.text-dark:focus, a.text-dark:hover {
 * Miscellaneous Styles
 */
 body {
-  color: #7F7F7F; }
+  color: #7F7F7F;
+  background-color: #EEE; }
+
+.container {
+  max-width: 500px;
+  background-color: #FFFFFF; }
 
 /*
 * Navigation Styles
@@ -5715,7 +5720,26 @@ body {
       background: #FFF;
       line-height: 60px;
       text-align: center;
-      font-size: 25px; }
+      font-size: 20px;
+      cursor: pointer;
+      position: relative;
+      transition: 0.35s ease all; }
+      .navigation ul li:before {
+        transition: 0.35s ease all; }
+      .navigation ul li:hover {
+        background-color: whitesmoke; }
+        .navigation ul li:hover:before {
+          color: #1b1e21; }
+      .navigation ul li a {
+        display: table;
+        width: 100%;
+        height: inherit;
+        background-color: transparent;
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .navigation ul li.active:before {
+        color: #53CCC7; }
 
 /*
 * Layouts Styles
@@ -5740,11 +5764,66 @@ body {
   .intro-heading .row {
     height: inherit; }
 
+.content-area h2 {
+  width: 100%;
+  display: table;
+  padding: 25px 0 25px 20px;
+  box-sizing: border-box;
+  position: relative; }
+  .content-area h2:before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -11px;
+    background-color: #00b3ee; }
+
+.content-area p {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 20px; }
+
+h2 {
+  font-size: 18px; }
+
+h3 {
+  font-size: 16px; }
+
+h4,
+h5,
+h6 {
+  font-size: 14px; }
+
+/*
+* Friends Styles
+*/
 .online {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%; }
+  .online.user-detail li:after, .online.user-history li:after {
+    display: none; }
+  .online.user-detail li a:hover, .online.user-history li a:hover {
+    background-color: transparent; }
+  .online.user-history {
+    margin-top: -25px; }
+    .online.user-history .image:before, .online.user-history .image:after {
+      display: none; }
   .online li {
     box-sizing: border-box;
     height: 100px;
@@ -5752,32 +5831,63 @@ body {
     width: inherit;
     border-bottom: 1px solid #EEE;
     position: relative; }
-    .online li .image,
-    .online li .online-content {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
-    .online li .image {
-      width: 55px;
-      height: 55px;
-      float: left;
-      background-position: center;
-      background-size: cover;
-      background-color: #DDD;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      margin: 0 20px 0 0; }
-    .online li .online-content {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: normal; }
-      .online li .online-content span {
-        display: block;
-        font-size: 14px;
-        font-weight: 300; }
+    .online li a {
+      width: 100%;
+      height: inherit;
+      display: block;
+      color: #7F7F7F;
+      text-decoration: none;
+      transition: 0.35s ease all; }
+      .online li a * {
+        transition: 0.35s ease all; }
+      .online li a .image,
+      .online li a .online-content {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .online li a .image {
+        width: 55px;
+        height: 55px;
+        float: left;
+        background-position: center;
+        background-size: cover;
+        background-color: #DDD;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin: 0 20px 0 0;
+        position: relative; }
+        .online li a .image:after, .online li a .image:before {
+          display: table;
+          content: '';
+          position: absolute;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%; }
+        .online li a .image:after {
+          bottom: -5px;
+          left: -5px;
+          width: 10px;
+          height: 10px;
+          background-color: #A3D900; }
+        .online li a .image:before {
+          bottom: -8px;
+          left: -8px;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #A3D900; }
+      .online li a .online-content {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal; }
+        .online li a .online-content span {
+          display: block;
+          font-size: 14px;
+          font-weight: 300; }
+      .online li a:hover {
+        background-color: whitesmoke; }
     .online li:after {
       content: "\f105";
       font-family: FontAwesome, sans-serif;
@@ -5790,3 +5900,58 @@ body {
       top: 50%;
       margin-top: -15px;
       right: 15px; }
+
+.most-played {
+  display: table; }
+  .most-played ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .most-played ul li {
+      width: 55px;
+      height: 55px;
+      float: left;
+      margin-right: 15px; }
+      .most-played ul li .image {
+        display: table;
+        width: inherit;
+        height: inherit;
+        background-position: center;
+        background-size: cover;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; }
+
+/*
+* Profile Styles
+*/
+.form-holder {
+  width: 100%;
+  display: table;
+  box-sizing: border-box; }
+
+/*
+* Detail Styles
+*/
+/*
+* Info Styles
+*/
+.completed li:after {
+  content: "\f00c";
+  font-family: FontAwesome, sans-serif;
+  color: green; }
+
+.completed li.not:after {
+  content: "\f00d";
+  font-family: FontAwesome, sans-serif;
+  color: indianred; }
+
+/*
+* Layouts Styles
+*/
+.footer-holder .row {
+  background-color: #1b1e21;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 15px 0;
+  text-align: center; }

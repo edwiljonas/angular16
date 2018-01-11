@@ -1,0 +1,205 @@
+[
+  {
+    "id": 1,
+    "name": "DoctaG",
+    "image": "lux-small.jpg",
+    "champ": "Lux",
+    "mostPlayed": [
+      {
+        "champ": "Tristana",
+        "image": "tris-small.jpg"
+      },
+      {
+        "champ": "Ezreal",
+        "image": "ez-small.jpg"
+      },
+      {
+        "champ": "Katarina",
+        "image": "kat-small.jpg"
+      },
+      {
+        "champ": "Olaf",
+        "image": "olaf-small.jpg"
+      }
+    ],
+    "matchHistory": [
+      {
+        "champ": "Katerina",
+        "image": "kat-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Jhin",
+        "image": "jhin-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Kennen",
+        "image": "ken-small.jpg",
+        "outcome": "Victory"
+      }
+    ],
+    "status": 1
+  },
+  {
+    "id": 2,
+    "name": "Arc",
+    "image": "tris-small.jpg",
+    "champ": "Tristana",
+    "mostPlayed": [
+      {
+        "champ": "Lux",
+        "image": "lux-small.jpg"
+      },
+      {
+        "champ": "Kogmaw",
+        "image": "kog-small.jpg"
+      },
+      {
+        "champ": "Tristana",
+        "image": "tris-small.jpg"
+      }
+    ],
+    "matchHistory": [
+      {
+        "champ": "Jhin",
+        "image": "jhin-small.jpg",
+        "outcome": "Defeat"
+      },
+      {
+        "champ": "Lux",
+        "image": "lux-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Katerina",
+        "image": "kat-small.jpg",
+        "outcome": "Defeat"
+      }
+    ],
+    "status": 1
+  },
+  {
+    "id": 3,
+    "name": "ihasnoface",
+    "image": "kat-small.jpg",
+    "champ": "Katerina",
+    "mostPlayed": [
+      {
+        "champ": "Olaf",
+        "image": "olaf-small.jpg"
+      },
+      {
+        "champ": "Lux",
+        "image": "tris-small.jpg"
+      },
+      {
+        "champ": "Ezreal",
+        "image": "ez-small.jpg"
+      }
+    ],
+    "matchHistory": [
+      {
+        "champ": "Olaf",
+        "image": "olaf-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Jhin",
+        "image": "jhin-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Lux",
+        "image": "lux-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Kennen",
+        "image": "ken-small.jpg",
+        "outcome": "Victory"
+      }
+    ],
+    "status": 1
+  },
+  {
+    "id": 4,
+    "name": "Forzend",
+    "image": "ken-small.jpg",
+    "champ": "Kennen",
+    "mostPlayed": [
+      {
+        "champ": "Lux",
+        "image": "lux-small.jpg"
+      },
+      {
+        "champ": "Kogmaw",
+        "image": "kog-small.jpg"
+      },
+      {
+        "champ": "Tristana",
+        "image": "tris-small.jpg"
+      }
+    ],
+    "matchHistory": [
+      {
+        "champ": "Jhin",
+        "image": "jhin-small.jpg",
+        "outcome": "Defeat"
+      },
+      {
+        "champ": "Lux",
+        "image": "lux-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Katerina",
+        "image": "kat-small.jpg",
+        "outcome": "Defeat"
+      }
+    ],
+    "status": 1
+  },
+  {
+    "id": 5,
+    "name": "WarMachine",
+    "image": "olaf-small.jpg",
+    "champ": "Olaf",
+    "mostPlayed": [
+      {
+        "champ": "Tristana",
+        "image": "tris-small.jpg"
+      },
+      {
+        "champ": "Ezreal",
+        "image": "ez-small.jpg"
+      },
+      {
+        "champ": "Katarina",
+        "image": "kat-small.jpg"
+      },
+      {
+        "champ": "Olaf",
+        "image": "olaf-small.jpg"
+      }
+    ],
+    "matchHistory": [
+      {
+        "champ": "Katerina",
+        "image": "kat-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Jhin",
+        "image": "jhin-small.jpg",
+        "outcome": "Victory"
+      },
+      {
+        "champ": "Kennen",
+        "image": "ken-small.jpg",
+        "outcome": "Victory"
+      }
+    ],
+    "status": 1
+  }
+]

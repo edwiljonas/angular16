@@ -16,7 +16,33 @@
       background: #FFF;
       line-height: 60px;
       text-align: center;
-      font-size: 25px;
+      font-size: 20px;
+      cursor: pointer;
+      position: relative;
+      @include transition(.35s ease all);
+      &:before{
+        @include transition(.35s ease all);
+      }
+      &:hover{
+        background-color: whitesmoke;
+        &:before{
+          color: #1b1e21;
+        }
+      }
+      a{
+        display: table;
+        width: 100%;
+        height: inherit;
+        background-color: transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &.active{
+        &:before{
+          color: #53CCC7;
+        }
+      }
     }
   }
 }
